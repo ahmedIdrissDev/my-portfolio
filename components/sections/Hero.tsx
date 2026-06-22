@@ -57,7 +57,7 @@ export function Hero() {
   return (
     <section 
       ref={containerRef}
-      className="px-[var(--spacing-sm)] overflow-hidden relative md:px-[var(--spacing-lg)] lg:px-[var(--spacing-xxl)] min-h-[90dvh] pt-[var(--spacing-xxxl)] pb-[var(--spacing-xl)]  flex flex-col items-center justify-center text-center min-h-[70vh]"
+      className="px-[var(--spacing-sm)] overflow-hidden relative  lg:px-[var(--spacing-xxl)] min-h-[90dvh] pt-[var(--spacing-xxxl)] pb-[var(--spacing-xl)]  flex flex-col items-center justify-center text-center min-h-[70vh]"
     >
       <h1 className="max-w-[800px] relative  font-Ahmed mb-[var(--spacing-md)] font-normal flex flex-wrap justify-center text-4xl md:text-6xl">
         {"Building high-performance websites and AI applications.".split(" ").map((word, i) => (
