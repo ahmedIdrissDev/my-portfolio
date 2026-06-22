@@ -8,7 +8,7 @@ export function Navbar() {
         Ahmed Idriss
       </Link>
       <div className="flex gap-[var(--spacing-md)]">
-        <Button variant="secondary">Contact</Button>
+        <Button variant="secondary" className="hidden md:block">Contact</Button>
         <Button variant="primary" className="text-white font-normal">View Projects</Button>
       </div>
     </nav>
