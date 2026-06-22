@@ -63,7 +63,7 @@ export function Hero() {
         {"Building high-performance websites and AI applications.".split(" ").map((word, i) => (
           <span key={i} className="hero-word opacity-0 mr-[0.25em]">{word}</span>
         ))}
-        <svg className="absolute right-0 -bottom-8 opacity-0 hero-draw-svg" width="491" height="111" viewBox="0 0 401 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="absolute -right-8 md:right-0 -bottom-8 opacity-0 hero-draw-svg" width="491" height="111" viewBox="0 0 401 111" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path ref={pathRef} d="M0.587402 28.3167C0.587402 28.3167 414.587 -33.6833 378.587 40.3167C332.083 135.909 299.502 84.0956 194.087 97.8167C126.586 106.603 47.1657 123.355 24.0874 59.3167C0.240946 -6.85368 169.574 48.0423 237.087 28.3166C301.051 9.62802 400.087 11.8168 400.087 11.8168" stroke="url(#paint0_linear_89_2)" strokeWidth="5"/>
 <defs>
 <linearGradient id="paint0_linear_89_2" x1="200.337" y1="4" x2="200.337" y2="106.528" gradientUnits="userSpaceOnUse">
