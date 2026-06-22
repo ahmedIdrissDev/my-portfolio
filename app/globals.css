@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-primary: #000000;
+  --color-brand-secondary: #ffffff;
+  --color-text-primary: #000000;
+  --color-text-secondary: #333333;
+  --color-text-tertiary: #666666;
+  --color-text-on-dark: #ffffff;
+  --color-surface-default: #ffffff;
+  --color-surface-subtle: #f9f9f9;
+  --color-surface-hover-light: #f5f5f5;
+  --color-surface-active-light: #efefef;
+  --color-border-primary: #000000;
+  --color-border-subtle: #eeeeee;
+  --color-icon-primary: #000000;
+  --color-icon-on-dark: #ffffff;
+   --font-Ahmed:Coustomfont;
+  --color-gradient-green-start: hsl(150, 25%, 88%);
+  --color-gradient-green-end: hsl(170, 25%, 88%);
+  --color-gradient-yellow-start: hsl(60, 25%, 88%);
+  --color-gradient-yellow-end: hsl(80, 25%, 88%);
+  --color-gradient-blue-start: hsl(200, 25%, 88%);
+  --color-gradient-blue-end: hsl(220, 25%, 88%);
+
+  --font-sans: var(--font-inter);
+  
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 40px;
+  --spacing-xl: 64px;
+  --spacing-xxl: 96px;
+  --spacing-xxxl: 128px;
+
+  /* Border radius */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-sm: 0px 1px 3px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0px 4px 12px rgba(0, 0, 0, 0.08), 0px 1px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-inter: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --line-height-heading: 1.15;
+  --line-height-body: 1.6;
+  --letter-spacing-heading: -0.02em;
+  --letter-spacing-body: normal;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  body {
+    background-color: var(--color-surface-default);
+    color: var(--color-text-primary);
+    font-family: var(--font-inter);
+    line-height: var(--line-height-body);
+    letter-spacing: var(--letter-spacing-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h1, h2, h3, h4, h5, h6 {
+    line-height: var(--line-height-heading);
+    letter-spacing: var(--letter-spacing-heading);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+  }
+
+  /* Base Headings Setup Based on DESIGN.md */
+  h1 {
+    font-size: clamp(3.5rem, 6vw, 1rem);
+  }
+
+  h2 {
+    font-size: clamp(2.5rem, 4.5vw, 3rem);
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+  }
+
+  p.body-lg {
+    font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+  }
+
+  p.body-md {
+    font-size: 1rem;
+  }
+
+  p.body-sm {
+    font-size: 0.875rem;
+  }
+
+  ::selection {
+    background-color: var(--color-brand-primary);
+    color: var(--color-text-on-dark);
   }
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family:Coustomfont;
+  src: url('/fonts/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf');
 }
