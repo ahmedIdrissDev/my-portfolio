@@ -13,17 +13,17 @@ if (typeof window !== "undefined") {
 
 const projects = [
   {
-    title: "E-Commerce Platform with Next.js",
+    title: "Landing pages | Enterpires Website ",
     icon: AppWindow,
     gradient: "green" as const,
   },
   {
-    title: "AI Document Analysis Agent",
+    title: "Agentic AI and workflows",
     icon: Database,
     gradient: "blue" as const,
   },
   {
-    title: "Real-time Dashboard (Convex)",
+    title: "Web Platforms",
     icon: FolderGit2,
     gradient: "yellow" as const,
   },

@@ -1,6 +1,7 @@
 import React from "react";
 import { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface ResourceCardProps {
   title: string;
