@@ -67,7 +67,7 @@ export function Hero() {
 <path ref={pathRef} d="M0.587402 28.3167C0.587402 28.3167 414.587 -33.6833 378.587 40.3167C332.083 135.909 299.502 84.0956 194.087 97.8167C126.586 106.603 47.1657 123.355 24.0874 59.3167C0.240946 -6.85368 169.574 48.0423 237.087 28.3166C301.051 9.62802 400.087 11.8168 400.087 11.8168" stroke="url(#paint0_linear_89_2)" strokeWidth="5"/>
 <defs>
 <linearGradient id="paint0_linear_89_2" x1="200.337" y1="4" x2="200.337" y2="106.528" gradientUnits="userSpaceOnUse">
-<stop stop-color="#4000FF"/>
+<stop stop-color="red"/>
 <stop offset="1" stop-color="#795CD0"/>
 </linearGradient>
 </defs>
@@ -85,7 +85,7 @@ export function Hero() {
 <path d="M35.1396 610.194C35.1396 610.194 258.64 110.194 505.14 110.194C751.64 110.194 647.14 610.194 1042.64 610.194C1438.14 610.194 1154.14 110.194 1467.64 43.1939C1781.14 -23.8062 1740.09 649.065 2057.14 610.194C2321.15 577.824 2254.66 87.0431 2519.64 110.194C2765.74 131.695 2907.14 610.194 2907.14 610.194" stroke="url(#paint0_linear_86_2)" stroke-width="77"/>
 <defs>
 <linearGradient id="paint0_linear_86_2" x1="1471.14" y1="38.4988" x2="1471.14" y2="611.817" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0084FF"/>
+<stop stop-color="red"/>
 <stop offset="1" stop-color="#666666" stop-opacity="0"/>
 </linearGradient>
 </defs>

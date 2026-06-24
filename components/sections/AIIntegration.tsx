@@ -108,16 +108,17 @@ export function AIIntegration() {
       <div className="grid w-full grid-cols-1 gap-[var(--spacing-md)] md:grid-cols-2 lg:grid-cols-4">
         {workflowSteps.map((step) => (
           <article
-            key={step.title}
-            className="ai-integration-element bg-neutral-200 opacity-0 flex h-full flex-col rounded-[var(--radius-md)] border border-[var(--color-border-subtle)] bg-[var(--color-surface-default)] p-[var(--spacing-md)]"
+            key={step.title} 
+            className="ai-integration-element overflow-clip relative   opacity-0 flex h-full flex-col rounded-[var(--radius-md)] border border-[var(--color-border-subtle)] bg-[var(--color-surface-default)] p-[var(--spacing-md)]"
           >
-            <div className="mb-[var(--spacing-md)] text-[var(--color-icon-primary)]">
+            <div className="bg-red-500 opacity-70 blur-3xl h-11 z-0 w-full absolute top-0 right-0 left-0"></div>
+            <div className="mb-[var(--spacing-md)]  z-10">
               <step.icon size={30} strokeWidth={1.5} />
             </div>
-            <h3 className="mb-[var(--spacing-sm)] text-xl font-normal">
+            <h3 className="mb-[var(--spacing-sm)]  text-xl font-normal">
               {step.title}
             </h3>
-            <p className="text-md text-[var(--color-text-secondary)]">
+            <p className="text-md opacity-80 ">
               {step.description}
             </p>
           </article>
@@ -133,7 +134,7 @@ export function AIIntegration() {
             title={tool.name}
           >
             <span
-              className={`flex size-11 items-center justify-center rounded-full border border-[var(--color-border-subtle)] ${tool.iconClassName}`}
+              className={`flex size-11 items-center justify-center rounded-full  border-[var(--color-border-subtle)] ${tool.iconClassName}`}
             >
               <tool.icon className="size-7" aria-hidden="true" />
             </span>

@@ -23,7 +23,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full  flex flex-col bg-[var(--color-surface-default)] text-[var(--color-text-primary)] bg-neutral-100 ">
+      <body className="min-h-full  flex flex-col bg-[var(--color-surface-default)] text-[var(--color-text-primary)]  ">
         {children}
       </body>
     </html>
